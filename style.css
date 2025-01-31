@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Ubuntu';
+}
+
+div
+{
+    text-align: center;
+    color: white;
+}
+
+#title
+{
+    font-size: 60px;
+    margin: 0 10%;
+}
+
+#desc
+{
+    font-size: 30px;
+    margin: 1.5em 10%;
+}
+
+#foot
+{
+    position: absolute;
+    bottom: 5%;
+    font-size: 15px;
+    margin-top: 50vh;
+    color: hsl(0, 0%, 80%);
+}
+
+
+a
+{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+a::after
+{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 13%;
+    bottom: 0;
+    left: 0;
+    background-color: blueviolet;
+    transition: width ease 200ms;
+}
+
+a:hover::after { width: 100%; }
